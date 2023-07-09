@@ -28,3 +28,25 @@ and not tracked by git.
 
 4. Credentials and sensitive information: Configuration files or files containing API keys, passwords, or other sensitive data.
 
+Q5. what is package.json and package-lock.json ?
+
+The package.json file is a metadata file for your Node.js project The dependencies section of the package.json 
+file lists all the packages or libraries that your project depends on. It includes the name of each package
+and its version range. When you run npm install, NPM reads the package.json file and installs the specified 
+dependencies along with their dependencies recursively.
+
+The package-lock.json file ensures that the same versions of dependencies are installed consistently across different
+environments or when collaborating with other developers. It specifies the exact version numbers and dependency 
+tree for all the packages installed in your project, including both direct and indirect dependencies.
+
+Q6. what is node_modules ? it is a good idea to push that on git ?
+
+node_modules act like database where all package code was written and NO it is not a good idea to push node_modules on git
+because it can be re-generated.
+
+Q7. why should i not modify package-lock json ?
+
+When working in a team, it is essential to have a consistent development environment. By not modifying the package-lock.json
+file, all team members will be working with the same set of dependencies, reducing the chances of issues and ensuring 
+smoother collaboration.
+
