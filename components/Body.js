@@ -7,10 +7,11 @@ const Body = () => {
   const [listOfRestaurant, setListOfRestaurant] = useState(restaurantList);
 
   const ratedRestaurant = () => {
-    const filteredList =  listOfRestaurant.filter((item) => item?.data?.avgRating > 4);
+    const filteredList =  listOfRestaurant.filter((item) => item?.data?.avgRating > 3.9);
     setListOfRestaurant(filteredList)
   }
 
+  lmjcsjkd
   return (
     <div>
       <div className="search"> Search </div>
