@@ -53,3 +53,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.header1{
+    display: flex;
+}
+
+.toprated{
+    height: 30px;
+    margin-top: 15px;
+}
