@@ -1,13 +1,14 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
-  const [login, setLogin] = useState("Login")
+  const [btnNameReact, setBtnNameReact] = useState("Login")
 
-  const handleLogin = () => {
-    if(login === "Login" ){
-      setLogin("Logout")
-    }else setLogin("Login")
+  const handleBtnNameReact = () => {
+    if(btnNameReact === "Login" ){
+      setBtnNameReact("Logout")
+    }else setBtnNameReact("Login")
   }
 
   return (
@@ -20,11 +21,11 @@ const Header = () => {
       </div>
       <div className="nav-item">
         <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
           <li>Cart</li>
-          <button className="login" onClick={handleLogin}>{login}</button>
+          <button className="login" onClick={handleBtnNameReact}>{btnNameReact}</button>
         </ul>
       </div>
     </div>
