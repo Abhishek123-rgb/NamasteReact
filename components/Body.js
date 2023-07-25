@@ -12,7 +12,8 @@ const Body = () => {
     const filteredList = listOfRestaurant.filter(
       (item) => item?.data?.avgRating > 3.9
     );
-    setListOfRestaurant(filteredList);
+    console.log("ratedRestaurant",filteredList);
+    setFilterList(filteredList);
   };
 
   const handleSerach = () => {

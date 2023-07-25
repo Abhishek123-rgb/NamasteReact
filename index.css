@@ -69,3 +69,12 @@
     width: 77px;
     margin-right: 10px;
 }
+
+.user-card{
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 16px;
+}
