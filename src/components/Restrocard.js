@@ -1,6 +1,6 @@
 export const Restrocard = (props) => {
   return (
-    <div className="res-card">
+    <div className="border-solid border-4 border-gray-200 mb-3 rounded-xl p-4 w-60">
       <img
         className="res-logo"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-ldNnZb_CXlYmOVrmh69OrZ1MpK9QnLA9A&usqp=CAU"

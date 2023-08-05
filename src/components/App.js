@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Header";
 import Body from "./Body";
@@ -6,6 +6,8 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Error from "./Error";
+
+const Grocery = lazy(() => import('./Grocery'))
 
 const heading = React.createElement(
   "div",
@@ -41,6 +43,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/grocery",
+        element: <Suspense><Grocery fallback={<h1>Lodaing....</h1>} /></Suspense>,
       },
     ],
     errorElement: <Error />,
